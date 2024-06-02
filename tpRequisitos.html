@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <div style="width:60%">
+    
+            <ol>
+                <li>Crear un formulario con:
+                    Nombre (obligatorio, máximo 9 de longitud)
+                    Temperatura preferida (número, obligatorio, mínimo -10, máximo 60)
+                    Teléfono (opcional, en caso de ser provisto deben ser todos números, no arrancar en cero y longitud igual a 10)
+                    </li>
+
+                <li>Dar estilo particular al formulario.</li>
+                <li>Validar campos mediante javascript.</li>
+                <li>Mostrar errores creando elementos del DOM.</li>
+                <li>Cambiar estilo a campos con errores.</li>
+                <li>Al enviar, si los datos están bien, agregar mensaje a una lista de mensajes,
+                     con el siguiente formato: <br>
+                    Si proveyó el teléfono,
+                    “Hola nombre>, te llamaremos al teléfono> cuando hagan temperatura> grados”
+                    Sí no,
+                    “Hola nombre>, nos vemos cuando hagan temperatura> grados”</li>
+                    <li> Luego de enviar correctamente, limpiar todos los campos del formulario, 
+                        errores de validación  y cambios de estilo.<br>
+                        NOTA: en el formulario, conviene usar el evento "onsubmit" para llamar a la función que hace la validación.
+                        <br> 
+                        A los efectos del práctico, la función de validación siempre debe devolver false,
+                         así el formulario no se envía. 
+                         <br>En el onsubmit, hacer de esta manera:
+                         form onsubmit="return validar()">
+                         <br>
+                        Es decir, haciendo return de la función para validar que haya definido.
+                        PD: Manden el archivo así le damos una devolución. 
+                        Mejor que sea el .html y tenga adentro el js y css, ya que es cortito el ejercicio y 
+                        para nuestra facilidad en la corrección.
+                              </li>
+                </ol>
+            
+    </div>
+</body>
+</html>

@@ -1,0 +1,14 @@
+.colorRojo{
+
+    color:red;
+    display: block;
+}
+
+.inputErroneo{
+    background-color: red;
+
+}
+
+body{
+    background-color: blueviolet;
+}

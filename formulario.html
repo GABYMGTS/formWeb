@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css"> 
+   
+    <script defer src="validacion.js"></script>
+
+   <!--
+   <script>
+        function validoFormulario() {
+            validoTemperatura;
+  let x = document.forms["formulario"]["name"].value;
+  if (x == "") {
+    alert("Nombre está vacio");
+    return false;
+  }
+}
+    </script>
+
+<script>
+    function validoTemperatura() {
+      
+      let x = document.getElementById("temperatura").value;
+      // If x is Not a Number or less than -10 or greater than 60
+      let text;
+      if (isNaN(x) || x < -10 || x > 60) {
+        text = "Temperatura no valida";
+      } else {
+        text = "Input OK";
+      }
+      document.getElementById("demo").innerHTML = text;
+    }
+    </script>
+
+    -->
+</head>
+<body>
+    <div class="container">
+        <form  onsubmit="return validar()" autocomplete="off" >
+            
+          <label for="name">Nombre: </label>
+          <br>
+          <input type="text" name="nombre" id="nombre" onfocus="limpiarErrores(event)" > 
+          <br>
+          <br>
+            <label for="temperatura">Temperatura Preferida: </label><br>
+            <input type="number" name="temperatura" id="temperatura" onfocus="limpiarErrores(event)">
+            <br>
+            <!--
+            <input type="number" name="temperatura" id="temperatura" min="-10" max="60" required><br>
+            -->
+            <br>
+            <label for="telefono">Telefono</label>
+            <br>
+            <input type="text" name="telefono" id="telefono" onfocus="limpiarErrores(event)"><br>
+            <br>
+            <!--
+
+            <label>Teléfono</label><br>
+            <input type="number" name="telefono" id="telefono"><br>
+            
+            -->
+            <!--
+            <input type="submit" name="Enviar" id="Enviar">
+            -->
+            <button type="submit">Enviar</button>
+            <br>
+            
+
+            
+
+
+
+
+            </form>
+
+
+    </div>
+    <div id="contenido">
+
+      <h1>Listado</h1>
+      <ul id="list">
+
+
+      </ul>
+    </div>
+</body>
+</html>
